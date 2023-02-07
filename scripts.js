@@ -2,7 +2,7 @@ function getNewsByCategory(){
     let category=id_category.value;
     console.log(category);
     
-     fetch(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=254444e446864ed387ba8eaedf57d835`).
+     fetch(`https://newsapi.org/v2/top-headlines?country=in&category=${category}&apiKey=`).
      then(res=>res.json()).then(data=>headlinesCategory(data))
   
   }
@@ -57,7 +57,7 @@ function getNewsByCategory(){
   
   function getNews(){
     
-    fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=254444e446864ed387ba8eaedf57d835`).
+    fetch(`https://newsapi.org/v2/top-headlines?country=in&apiKey=`).
     then(res=>res.json()).then(data=>headlines(data))
   
   }
@@ -110,7 +110,7 @@ function getNewsByCategory(){
   
   
   function getBusiness(){
-    fetch(`https://newsapi.org/v2/top-headlines/sources?category=business&apikey=254444e446864ed387ba8eaedf57d835`).
+    fetch(`https://newsapi.org/v2/top-headlines/sources?category=business&apikey=`).
     then(res=>res.json()).then(data=>business(data))
   
   
@@ -156,7 +156,7 @@ function getNewsByCategory(){
       }
   
       function getEntertainment(){
-        fetch(`https://newsapi.org/v2/top-headlines/sources?category=entertainment&apikey=254444e446864ed387ba8eaedf57d835`).
+        fetch(`https://newsapi.org/v2/top-headlines/sources?category=entertainment&apikey=`).
         then(res=>res.json()).then(data=>entertainment(data))
       
       
@@ -202,7 +202,7 @@ function getNewsByCategory(){
           }
   
           function getHealth(){
-            fetch(`https://newsapi.org/v2/top-headlines/sources?category=health&apikey=254444e446864ed387ba8eaedf57d835`).
+            fetch(`https://newsapi.org/v2/top-headlines/sources?category=health&apikey=`).
             then(res=>res.json()).then(data=>health(data))
           
           
@@ -248,7 +248,7 @@ function getNewsByCategory(){
               }
   
               function getScience(){
-                fetch(`https://newsapi.org/v2/top-headlines/sources?category=science&apikey=254444e446864ed387ba8eaedf57d835`).
+                fetch(`https://newsapi.org/v2/top-headlines/sources?category=science&apikey=`).
                 then(res=>res.json()).then(data=>science(data))
               
               
@@ -294,7 +294,7 @@ function getNewsByCategory(){
                   }
                 
                   function getSports(){
-                    fetch(`https://newsapi.org/v2/top-headlines/sources?category=sports&apikey=254444e446864ed387ba8eaedf57d835`).
+                    fetch(`https://newsapi.org/v2/top-headlines/sources?category=sports&apikey=`).
                     then(res=>res.json()).then(data=>sports(data))
                   
                   
@@ -339,7 +339,7 @@ function getNewsByCategory(){
                   
                       }
                       function getTechnology(){
-                        fetch(`https://newsapi.org/v2/top-headlines/sources?category=technology&apikey=254444e446864ed387ba8eaedf57d835`).
+                        fetch(`https://newsapi.org/v2/top-headlines/sources?category=technology&apikey=`).
                         then(res=>res.json()).then(data=>technology(data))
                       
                       
